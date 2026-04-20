@@ -1,1 +1,95 @@
-<h1>welcome Deep Learning</h1>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深度学习数学基础 - 线性代数</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1>📚 深度学习数学基础</h1>
+                <p class="subtitle">Linear Algebra for Deep Learning</p>
+            </div>
+            <nav class="sidebar-nav">
+                <ul id="chapter-list">
+                    <li class="chapter-item active" data-chapter="chapter1">
+                        <span class="chapter-number">第 1 章</span>
+                        <span class="chapter-title">线性代数</span>
+                    </li>
+                    <li class="chapter-item disabled" data-chapter="chapter2">
+                        <span class="chapter-number">第 2 章</span>
+                        <span class="chapter-title">概率与信息论</span>
+                        <span class="coming-soon">敬请期待</span>
+                    </li>
+                    <li class="chapter-item disabled" data-chapter="chapter3">
+                        <span class="chapter-number">第 3 章</span>
+                        <span class="chapter-title">数值计算</span>
+                        <span class="coming-soon">敬请期待</span>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <p>参考：DataWhale DIY-LLM</p>
+            </div>
+        </aside>
+
+        <!-- 主内容区 -->
+        <main class="main-content">
+            <!-- 顶部导航 -->
+            <header class="top-header">
+                <button class="menu-toggle" id="menuToggle">☰</button>
+                <div class="breadcrumb">
+                    <span>首页</span>
+                    <span class="separator">/</span>
+                    <span id="currentChapter">线性代数</span>
+                </div>
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle">🌙</button>
+                </div>
+            </header>
+
+            <!-- 阅读进度条 -->
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+
+            <!-- 内容区域 -->
+            <article class="content-area" id="contentArea">
+                <div id="markdown-content" class="markdown-body">
+                    <!-- Markdown 内容将在这里渲染 -->
+                </div>
+            </article>
+
+            <!-- 底部导航 -->
+            <footer class="content-footer">
+                <div class="footer-nav">
+                    <button class="nav-btn prev-btn" disabled>
+                        <span>←</span>
+                        <span>上一章</span>
+                    </button>
+                    <button class="nav-btn next-btn" disabled>
+                        <span>下一章</span>
+                        <span>→</span>
+                    </button>
+                </div>
+            </footer>
+        </main>
+
+        <!-- 目录浮窗 -->
+        <div class="toc-float" id="tocFloat">
+            <h3>目录</h3>
+            <ul id="toc-list"></ul>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
